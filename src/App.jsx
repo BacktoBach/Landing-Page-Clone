@@ -1,10 +1,10 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
-import About from './components/About'
-import Contact from './components/Contact'
+
 import Footer from './components/Footer'
 import Pricing from './components/Pricing'
+import Newsletter from './components/Newsletter'
 import './App.css'
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <Hero />
       <Features />
       <Pricing />
-      <About />
-      <Contact />
+      <Newsletter/>
+    
       <Footer />
     </div>
   )
