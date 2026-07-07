@@ -4,6 +4,7 @@ import Features from './components/Features'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Pricing from './components/Pricing'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Pricing />
       <About />
       <Contact />
       <Footer />
