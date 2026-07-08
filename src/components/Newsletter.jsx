@@ -21,7 +21,7 @@ export default function Newsletter() {
       {/* Background Grid Pattern (Tùy chọn tạo lưới mờ mờ như ảnh) */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1d24_1px,transparent_1px),linear-gradient(to_bottom,#1f1d24_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
 
-      <div className="container mx-auto px-6 relative z-10 max-w-xl text-center">
+      <div className="container mx-auto px-6 relative z-10 max-w-xl text-center" data-aos="zoom-in">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
           Stay in the loop
         </h2>
