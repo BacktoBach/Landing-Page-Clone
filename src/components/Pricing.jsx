@@ -140,7 +140,7 @@ export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(true)
 
   return (
-    <section className="py-20 md:py-28 bg-[#121115] border-t border-gray-900/40" id="pricing">
+    <section className="py-20 md:py-28 bg-[#1c1a22] border-t border-gray-800/50" id="pricing">
       <div className="container mx-auto px-6 lg:px-16">
         
         {/* Header */}

@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(#2c2936_1px,transparent_1px)] [background-size:20px_20px] opacity-40 pointer-events-none"></div>
 
       {/* <div class="hero-inner container"> */}
-      <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      <div className="container mx-auto px-6 lg:px-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         
         {/* <div class="hero-content"> */}
         <div className="lg:col-span-7 flex flex-col space-y-6 text-left">

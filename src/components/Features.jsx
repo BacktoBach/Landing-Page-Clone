@@ -15,23 +15,30 @@ const CheckIcon = () => (
 function DashboardMockup() {
   return (
     <div className="p-6 space-y-6">
-      <div className="grid grid-cols-3 gap-4">
+      
+      {/* SỬA CHỖ NÀY: Thay grid-cols-3 bằng grid-cols-1 cho mobile, và md:grid-cols-3 cho máy tính */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
         <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl">
           <div className="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Active Users</div>
           <div className="text-xl font-bold text-white mt-1">3,842</div>
           <div className="text-xs font-semibold text-emerald-500 mt-0.5">+12.3%</div>
         </div>
+        
         <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl">
           <div className="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Conversion</div>
           <div className="text-xl font-bold text-white mt-1">12.4%</div>
           <div className="text-xs font-semibold text-emerald-500 mt-0.5">+2.1%</div>
         </div>
+        
         <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl">
           <div className="text-[10px] text-gray-500 font-semibold uppercase tracking-wider">Churn</div>
           <div className="text-xl font-bold text-white mt-1">1.8%</div>
           <div className="text-xs font-semibold text-rose-500 mt-0.5">-0.4%</div>
         </div>
+
       </div>
+
       <div className="bg-[#1d1b22] border border-gray-800/40 p-4 rounded-xl space-y-3">
         <div className="text-xs text-gray-400 font-medium">Revenue — Last 7 days</div>
         <div className="w-full h-24">
@@ -48,10 +55,10 @@ function DashboardMockup() {
           </svg>
         </div>
       </div>
+
     </div>
   )
 }
-
 function FunnelsMockup() {
   const steps = [
     { label: 'Landing Page', val: '12,480', w: '100%', drop: '—', color: 'bg-[#ff5a5f]' },
@@ -214,7 +221,7 @@ export default function Features() {
 
   return (
     <section className="py-20 md:py-28 bg-[#121115]" id="features">
-      <div className="container mx-auto px-6 lg:px-16">
+      <div className="container mx-auto px-6 lg:px-24">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">

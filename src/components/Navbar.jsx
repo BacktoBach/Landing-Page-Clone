@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#121115]/80 backdrop-blur-md z-50 border-b border-gray-800/40 transition-all duration-300">
-      <div className="container mx-auto px-6 lg:px-16 flex items-center justify-between h-24">
+      <div className="container mx-auto px-6 lg:px-24 flex items-center justify-between h-24">
         
         {/* <a class="nav-brand"> */}
         <a href="#" className="flex items-center space-x-3 text-white text-xl font-bold tracking-tight group">
