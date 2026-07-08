@@ -144,7 +144,7 @@ export default function Pricing() {
       <div className="container mx-auto px-6 lg:px-16">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
           <p className="text-[#ff5a5f] text-xs uppercase tracking-widest font-bold mb-3">Pricing</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
             Start free. Scale as you grow.
@@ -155,7 +155,7 @@ export default function Pricing() {
         </div>
 
         {/* Toggle Switch (Tháng / Năm) */}
-        <div className="flex items-center justify-center space-x-4 mb-16">
+        <div className="flex items-center justify-center space-x-4 mb-16" data-aos="fade-up" data-aos-delay="120">
           <span className={`text-sm font-medium transition-colors ${!isAnnual ? 'text-white' : 'text-gray-500'}`}>
             Monthly
           </span>
@@ -179,11 +179,12 @@ export default function Pricing() {
         {/* Plans Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
           {PLANS_CONFIG.map((plan, index) => (
-            <PricingCard 
-              key={index} 
-              plan={plan} 
-              isAnnual={isAnnual} 
-            />
+            <div key={index} data-aos="fade-up" data-aos-delay={index * 120}>
+              <PricingCard 
+                plan={plan} 
+                isAnnual={isAnnual} 
+              />
+            </div>
           ))}
         </div>
 

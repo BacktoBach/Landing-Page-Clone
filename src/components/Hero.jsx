@@ -4,19 +4,18 @@ export default function Hero() {
       {/* Background Grid Pattern ảo diệu của SaaS */}
       <div className="absolute inset-0 bg-[radial-gradient(#2c2936_1px,transparent_1px)] [background-size:20px_20px] opacity-40 pointer-events-none"></div>
 
-      {/* <div class="hero-inner container"> */}
       <div className="container mx-auto px-6 lg:px-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         
-        {/* <div class="hero-content"> */}
-        <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
+        {/* Left Column: Text Content */}
+        <div className="lg:col-span-7 flex flex-col space-y-6 text-left" data-aos="fade-right">
           
-          {/* <div class="hero-badge"> */}
+          {/* Badge Version */}
           <div className="inline-flex items-center space-x-2 bg-[#1d1b22] border border-gray-800/80 rounded-full px-4 py-1.5 text-xs text-gray-400 w-fit">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="font-medium">Version 2.0 is Live</span>
           </div>
 
-          {/* <h1> */}
+          {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-white">
             Analytics that<br />
             <span className="bg-gradient-to-r from-[#ff5a5f] to-[#ff8a7a] bg-clip-text text-transparent">
@@ -24,12 +23,12 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* <p class="hero-desc"> */}
+          {/* Description */}
           <p className="text-gray-400 text-base md:text-lg max-w-xl font-light leading-relaxed">
             Ship faster with real-time product analytics, session replay, and feature flags — all in one platform built for engineering teams.
           </p>
 
-          {/* <div class="hero-cta"> */}
+          {/* Call To Action Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
             <a 
               href="#" 
@@ -52,12 +51,11 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* <div class="trusted-row"> */}
+          {/* Trusted Brands Row */}
           <div className="pt-8 border-t border-gray-800/60">
             <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-4">
               Trusted by 2,400+ teams
             </p>
-            {/* <div class="trusted-logos"> */}
             <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-gray-500">
               <span className="hover:text-gray-400 transition-colors cursor-pointer flex items-center gap-1">▪ Vercel</span>
               <span className="hover:text-gray-400 transition-colors cursor-pointer flex items-center gap-1">▪ Linear</span>
@@ -68,38 +66,35 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* <div class="hero-mockup"> */}
-        <div className="lg:col-span-5 relative w-full pt-6 lg:pt-0">
+        {/* Right Column: Hero Graphic Mockup */}
+        <div className="lg:col-span-5 relative w-full pt-6 lg:pt-0" data-aos="fade-left" data-aos-delay="180">
           <div className="absolute inset-0 bg-[#ff5a5f]/10 blur-[100px] rounded-full pointer-events-none"></div>
 
-          {/* <div class="mockup-window"> */}
+          {/* Mockup Window */}
           <div className="relative bg-[#16141a] border border-gray-800 rounded-2xl shadow-2xl overflow-hidden w-full transition-all duration-500 hover:border-gray-700/80">
             
-            {/* <div class="mockup-toolbar"> */}
-            <div className="flex items-center space-x-2 px-4 py-3 bg.bg-[#111014] border-b border-gray-800/60">
+            {/* Mockup Toolbar - ĐÃ SỬA LỖI bg.bg Ở ĐÂY */}
+            <div className="flex items-center space-x-2 px-4 py-3 bg-[#111014] border-b border-gray-800/60">
               <span className="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
               <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
               <span className="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
             </div>
 
-            {/* <div class="mockup-body"> */}
+            {/* Mockup Body */}
             <div className="p-5 md:p-6 space-y-6">
               
-              {/* <div class="mockup-metric-row"> */}
+              {/* Metrics Grid */}
               <div className="grid grid-cols-3 gap-3">
-                {/* <div class="mockup-metric"> 1 */}
                 <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl flex flex-col space-y-1">
                   <div className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Page Views</div>
                   <div className="text-xl font-bold text-white">24.8K</div>
                   <div className="text-[11px] font-semibold text-emerald-500">+12.3%</div>
                 </div>
-                {/* <div class="mockup-metric"> 2 */}
                 <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl flex flex-col space-y-1">
                   <div className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Conversions</div>
                   <div className="text-xl font-bold text-white">1,847</div>
                   <div className="text-[11px] font-semibold text-emerald-500">+8.1%</div>
                 </div>
-                {/* <div class="mockup-metric"> 3 */}
                 <div className="bg-[#1d1b22] border border-gray-800/40 p-3 rounded-xl flex flex-col space-y-1">
                   <div className="text-[10px] text-gray-500 font-semibold tracking-wider uppercase">Bounce Rate</div>
                   <div className="text-xl font-bold text-white">32%</div>
@@ -107,7 +102,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* <div class="mockup-chart"> */}
+              {/* Mini Chart Mockup */}
               <div className="bg-[#1d1b22] border border-gray-800/40 p-4 rounded-xl space-y-3">
                 <div className="text-xs text-gray-400 font-medium">Traffic — Last 30 days</div>
                 <div className="relative w-full h-24 pt-2">
